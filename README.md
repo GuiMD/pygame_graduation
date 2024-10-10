@@ -1,5 +1,5 @@
 # Development of a GAME in Python
-The game was developed as part of the Software Engineering degree in UNINTER. <br/>
+The game was developed as part of the Software Engineering degree at UNINTER. <br/>
 The game was created solely using Python, without any game engines. <br/>
 The goal is to improve Python skills and Programming Logic. <br/>
 
