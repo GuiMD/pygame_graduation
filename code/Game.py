@@ -11,15 +11,9 @@ class Game:
         pygame.init()
         self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))  # Game screen scaling
 
-    def run(self, ):
+    def run(self):
         while True:
             menu = Menu(self.window)
             menu.run()
             pass
 
-            # # check for all events
-            # for event in pygame.event.get():
-            #     if event.type == pygame.QUIT:  # Variável QUIT = 256
-            #         print('Quitting...')
-            #         pygame.quit()  # Close Window
-            #         quit()  # End pygame
