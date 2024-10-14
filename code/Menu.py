@@ -1,6 +1,11 @@
 #!/usr/bin/python
 #*** coding: utf-8 ***
 import pygame.image
+from pygame import Surface, Rect
+from pygame.font import Font
+
+from code.Const import WIN_WIDTH, COLOR_ORANGE
+
 
 class Menu:
     def __init__(self, window):
@@ -14,6 +19,8 @@ class Menu:
 
         while True:
             self.window.blit(source=self.surf, dest=self.rect)  # Place the image in the rectangle.
+            self.menu_text(60, "Mountain", COLOR_ORANGE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(60, "Shooter", COLOR_ORANGE, ((WIN_WIDTH / 2), 120))
             pygame.display.flip()  # Update the images on the entire screen.
 
             # check for all events
