@@ -36,6 +36,17 @@ class Menu:
                 if event.type == pygame.QUIT:  # Variável QUIT = 256
                     pygame.quit()  # Close Window
                     quit()  # End pygame
+                if event.type == pygame.KEYDOWN:  # evento de tecla pressionada!
+                    if event.key == pygame.K_DOWN:  # evento de tecla para baixo! *São diferentes!
+                        if menu_option < len(MENU_OPTION) - 1:
+                            menu_option += 1
+                        else:
+                            menu_option = 0
+                    if event.key == pygame.K_UP:  # UP KEY = inverte a lógica do K_DOWN
+                        if menu_option < 0:
+                            menu_option -= 1
+                        else:
+                            menu_option = len(MENU_OPTION) - 1
 
     def menu_text(self, text_size: int, text: str, text_color: tuple, text_center_pos: tuple):
         text_font: Font = pygame.font.SysFont(name="Lucida Sans Typewriter", size=text_size)
