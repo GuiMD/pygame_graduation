@@ -4,7 +4,7 @@ import random
 
 from code.Background import Background
 from code.Const import WIN_WIDTH, WIN_HEIGHT
-from code.Enemy import Enemy
+from code.Enemy import Enemy, Enemy3
 from code.Player import Player
 
 
@@ -40,4 +40,4 @@ class EntityFactory:
             case 'Enemy2':
                 return Enemy('Enemy2', (WIN_WIDTH + 10, random.randint(40, WIN_HEIGHT - 40)))
             case 'Enemy3':
-                return Enemy('Enemy3', (WIN_WIDTH + 10, random.randint(40, WIN_HEIGHT - 40)))
+                return Enemy3('Enemy3', (WIN_WIDTH + 10, random.randint(40, WIN_HEIGHT - 40)))
